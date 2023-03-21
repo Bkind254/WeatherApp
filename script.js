@@ -3,7 +3,7 @@ const search = document.querySelector(".search-box button");
 const weatherBox = document.querySelector(".weather-box");
 const weatherDetails = document.querySelector(".weather-details");
 const error404 = document.querySelector(".not-found");
-const APIKey = "0137b65997e68dbb904fdb6814bc78e6";
+const APIKey = process.env.API_KEY;
 
 // Function to fetch weather data and update UI
 function fetchWeather(city) {
